@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    }
-
-    header {
-        background: #333;
-        color: #fff;
-        padding: 10px 0;
-        text-align: center;
-    }
-
-    main {
-        padding: 20px;
-        text-align: center;
-    }
-
-    button {
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Analytics Demo</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
     <!-- Include the Google Analytics script -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L782C4E35Y"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-L782C4E35Y');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-L782C4E35Y');
     </script>
 </head>
 <body>
@@ -52,15 +51,14 @@
     <footer>
         <p>&copy; 2024 Simple Analytics Demo</p>
     </footer>
-    <script src="analytics.js"></script>
-</body>
-<script>
-    document.getElementById('clickButton').addEventListener('click', function() {
-        gtag('event', 'click', {
-            'event_category': 'button',
-            'event_label': 'Click Me Button',
-            'value': 1
+    <script>
+        document.getElementById('clickButton').addEventListener('click', function() {
+            gtag('event', 'click', {
+                'event_category': 'button',
+                'event_label': 'Click Me Button',
+                'value': 1
+            });
         });
-    });
-</script>
+    </script>
+</body>
 </html>
