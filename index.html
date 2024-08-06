@@ -12,23 +12,29 @@
             background-color: #f4f4f4;
             color: #333;
         }
-
         header {
             background: #333;
             color: #fff;
             padding: 10px 0;
             text-align: center;
         }
-
         main {
             padding: 20px;
             text-align: center;
         }
-
         button {
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
     <!-- Include the Google Analytics script -->
@@ -58,6 +64,7 @@
                 'event_label': 'Click Me Button',
                 'value': 1
             });
+            alert('Button clicked!');
         });
     </script>
 </body>
